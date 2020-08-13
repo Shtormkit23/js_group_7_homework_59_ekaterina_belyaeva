@@ -1,0 +1,29 @@
+.ToDo-List {
+    width: 540px;
+    margin: 0 auto;
+    border: 3px solid rgba(255,127,4,1);
+    padding: 15px;
+    border-radius: 15px;
+}
+
+input {
+    width: 450px;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid rgba(255,167,61,1);
+    color: #282c34;
+    font-weight: 800;
+    font-size: 16px;
+}
+
+input:focus, input:active{
+    border: 1px solid rgba(255,167,61,1);
+    box-shadow: 0 2px 3px orange;
+    outline: none;
+}
+
+h3 {
+    color: orangered;
+    font-size: 23px;
+    margin: 10px 0;
+}
