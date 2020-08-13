@@ -1,0 +1,20 @@
+.Joke {
+    width: 600px;
+    padding: 5px;
+    text-align: center;
+    border: 2px solid #cccccc;
+    box-shadow: 0 2px 3px #ccc;
+    margin: 10px;
+    box-sizing: border-box;
+    font: 16px/1.5 "Courier New", Arial, sans-serif;
+}
+
+.Joke:hover,
+.Joke:active {
+    background-color: #eee;
+}
+
+.joke {
+    margin: 16px 0;
+    color: #282c34;
+}
