@@ -1,26 +1,31 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {useState} from 'react';
 import './App.css';
+import JokeBox from "./container/JokeBox/JokeBox";
+import ToDoList from "./container/ToDoList/ToDoList";
 
 function App() {
+  const [componentName, setComponentName] = useState('todo-list');
+
+  let component;
+  switch (componentName) {
+    case 'JokeBox':
+      component =  <JokeBox/>;
+      break;
+    case 'todo-list':
+      component = <ToDoList/>;
+      break;
+    default:
+      component = null;
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+      <>
+        <div className="App-switch">
+          <button onClick={() => setComponentName('todo-list')}>To-Do List</button>
+          <button onClick={() => setComponentName('JokeBox')}>JokeBox</button>
+        </div>
+        {component}
+      </>
+  )
 }
 
 export default App;
