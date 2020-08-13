@@ -1,0 +1,14 @@
+.image-block{
+    width: 300px;
+    margin: 0 auto;
+}
+
+.image-block img{
+    width: 300px;
+}
+
+.joke-block{
+    width: 600px;
+    margin: 0 auto;
+}
+
